@@ -5,27 +5,35 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from time import sleep
 import pandas as pd
+import getpass
 
-PATH = "C:/Users/amrit/Downloadsgeckodriver.exe"
+
+username1 = input("Enter your twitter username: ")
+password1 = getpass.getpass("Enter your twitter password: ")
 
 n = int(input("Enter the number of tweets you want to scrape: "))
 key = input("Enter the keyword you want to search for: ")
 
-binary = FirefoxBinary('C:/Program Files/Mozilla Firefox/firefox.exe')
-driver = webdriver.Firefox(executable_path='C:/Users/amrit/Downloads/geckodriver.exe', firefox_binary=binary)
+name = input("Enter the name of the Excel file which needs to be stored: ")
+
+binary = FirefoxBinary('PATH TO BROWSER.EXE')
+
+# You can change the binary to the browser of your choice
+
+driver = webdriver.Firefox(executable_path='PATH TO DRIVER', firefox_binary=binary)
 driver.get("https://twitter.com/login")
 
 sleep(3)
 username = driver.find_element(By.XPATH,"//input[@name='text']")
 
-username.send_keys("parikshan160951")
+username.send_keys(f"{username1}")
 next_button = driver.find_element(By.XPATH,"//span[contains(text(),'Next')]")
 next_button.click()
 
 sleep(3)
 password = driver.find_element(By.XPATH,"//input[@name='password']")
 
-password.send_keys('drowsycodevit')
+password.send_keys(f'{password1}')
 log_in = driver.find_element(By.XPATH,"//span[contains(text(),'Log in')]")
 log_in.click()
 
@@ -103,6 +111,6 @@ while len(Tweets) < n:
 df = pd.DataFrame(zip(UserTags,TimeStamps,Tweets,Replys,reTweets,Likes)
 ,columns=['UserTags','TimeStamps','Tweets','Replys','reTweets','Likes'])
 
-df.to_excel(r"tweets.xlsx",index=False)
+df.to_excel(rf"{name}.xlsx",index=False)
 import os
-os.system('start "excel" "tweets.xlsx"')
+os.system(f'start "excel" "{name}.xlsx"')
