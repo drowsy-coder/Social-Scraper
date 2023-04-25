@@ -8,6 +8,7 @@ import pandas as pd
 
 PATH = "C:/Users/amrit/Downloadsgeckodriver.exe"
 
+n = int(input("Enter the number of tweets you want to scrape: "))
 key = input("Enter the keyword you want to search for: ")
 
 binary = FirefoxBinary('C:/Program Files/Mozilla Firefox/firefox.exe')
@@ -47,10 +48,10 @@ Likes=[]
 
 articles = driver.find_elements(By.XPATH,"//article[@data-testid='tweet']")
 
-while len(Tweets) < 10:
+while len(Tweets) < n:
     for article in articles:
         try:
-            for i in range(1, 10):
+            for i in range(1, n):
                 tweet_handle = driver.find_element(By.XPATH, f'/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div/div[{i}]/div/div/article/div/div/div[2]/div[2]/div[1]/div/div[1]/div/div/div[2]/div/div[1]/a/div/span').text
                 UserTags.append(tweet_handle)
         except:
@@ -71,21 +72,21 @@ while len(Tweets) < 10:
             Tweets.append('')
 
         try:
-            for i in range(1, 10):
+            for i in range(1, n):
                 Reply = article.find_element(By.XPATH,"/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div/div[{i}]/div/div/article/div/div/div[2]/div[2]/div[4]/div/div[1]/div/div/div[2]/span/span/span").text
                 Replys.append(Reply)
         except:
             Replys.append('')
 
         try:
-            for i in range(1, 10):
+            for i in range(1, n):
                 reTweet = article.find_element(By.XPATH,"/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div/div[{i}]/div/div/article/div/div/div[2]/div[2]/div[4]/div/div[2]/div/div/div[2]/span/span/span").text
                 reTweets.append(reTweet)
         except:
             reTweets.append('')
 
         try:
-            for i in range(1,10):
+            for i in range(1,n):
                 Like = article.find_element(By.XPATH,"/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/div[3]/div/section/div/div/div[{i}]/div/div/article/div/div/div[2]/div[2]/div[4]/div/div[3]/div/div/div[2]/span/span/span").text
                 Likes.append(Like)
         except:
@@ -94,7 +95,7 @@ while len(Tweets) < 10:
     driver.execute_script('window.scrollTo(0,document.body.scrollHeight);')
 
     sleep(3)
-    if len(Tweets) >= 10:
+    if len(Tweets) >= n:
         break
     articles = driver.find_elements(By.XPATH,"//article[@data-testid='tweet']")
     Tweets = list(set(Tweets))
