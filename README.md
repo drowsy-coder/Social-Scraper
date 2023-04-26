@@ -45,7 +45,7 @@ If you're interested in contributing, here are some ideas:
 
 - Develop a scraper for a different social media website
 - Improve the existing Twitter scraper by adding new features or optimizing performance
-- Create a user-friendly UI for the scraper
+- Create a user-friendly UI for the scraper ✅
 - Add support for scraping multimedia content such as images and videos
 - Implement natural language processing techniques to analyze the scraped content
 
