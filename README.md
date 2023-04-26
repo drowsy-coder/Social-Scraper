@@ -40,7 +40,7 @@ pip install praw
 1. Clone this repository or download the script to your local machine.
 2. Create a [Reddit Script app](https://www.reddit.com/prefs/apps) and get your credential and secret.
 3. Open the script in a Python IDE or text editor.
-4.. Run the script and enter the required inputs in the command prompt when prompted:
+4. Run the script and enter the required inputs in the command prompt when prompted:
     - The subreddit name you want to scrape
     - The number of posts you want to scrape
     - The name of the CSV file to be stored
