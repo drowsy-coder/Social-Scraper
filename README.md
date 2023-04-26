@@ -38,7 +38,7 @@ pip install praw
 
 ### ![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)
 1. Clone this repository or download the script to your local machine.
-2. Create a Reddit Script app and get your credential and secret.
+2. Create a [Reddit Script app](https://www.reddit.com/prefs/apps) and get your credential and secret.
 3. Open the script in a Python IDE or text editor.
 4.. Run the script and enter the required inputs in the command prompt when prompted:
     - The subreddit name you want to scrape
