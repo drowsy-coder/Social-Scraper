@@ -1,6 +1,6 @@
 # Social Media Scraper
 
-<img src="https://website.understandingdata.com/wp-content/uploads/2022/02/scraping-twitter-1024x440.jpg" alt="Scraping Twitter" width="512" height="220" />
+<img src="https://imgur.com/dshvWbf.png" alt="Scraping Twitter" width="512" height="220" />
 
 ## Introduction
 This program is a Python script that utilizes the Selenium web driver and the PRAW (Python Reddit API Wrapper) library to scrape a specified number of tweets containing a particular keyword from Twitter and a specified number of posts from a subreddit on Reddit. The scraped data is stored in an Excel file that can be easily accessed and analyzed.
@@ -56,7 +56,7 @@ pip install praw
 
 ## Where to Contribute?
 
-<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220327234835/How-to-Contribute-to-Open-Source-Projects-on-GitHub.png" alt="Scraping Twitter" width="512" height="220" />
+<img src="https://imgur.com/iBMe3Rv.png" alt="Scraping Twitter" width="512" height="220" />
 
 Contributions to this project are welcome! In addition to improving the existing Twitter and Reddit scrapers, there are opportunities to develop similar scripts for other social media websites such as Facebook, Instagram, and more.
 
