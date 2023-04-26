@@ -5,6 +5,8 @@
 ## Introduction
 This program is a python script that utilizes the selenium web driver to scrape a specified number of tweets containing a particular keyword from Twitter. The scraped tweets are stored in an excel file that can be easily accessed and analyzed.
 
+<img src="https://i.imgur.com/JS9bxEB.png" alt="Scraping Twitter"/>
+
 ## Dependencies
 To use this program, you need to have the following installed on your system:
 - ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -43,7 +45,7 @@ If you're interested in contributing, here are some ideas:
 
 - Develop a scraper for a different social media website
 - Improve the existing Twitter scraper by adding new features or optimizing performance
-- Create a user-friendly UI for the scraper
+- Create a user-friendly UI for the scraper ✅
 - Add support for scraping multimedia content such as images and videos
 - Implement natural language processing techniques to analyze the scraped content
 
