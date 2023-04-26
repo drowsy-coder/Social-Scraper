@@ -38,14 +38,8 @@ def scrape_tweets():
     log_in.click()
 
     sleep(3)
-    search_box = driver.find_element(By.XPATH,"//input[@data-testid='SearchBox_Search_Input']")
-
-    search_box.send_keys(key)
-    search_box.send_keys(Keys.ENTER)
-
-    sleep(3)
-    latest = driver.find_element(By.XPATH,f"//a[@href='/search?q={key}&src=typed_query&f=live']")
-    latest.click()
+    
+    driver.get(f"https://twitter.com/search?q={key}&src=typed_query&f=live")
 
     UserTags=[]
     TimeStamps=[]
