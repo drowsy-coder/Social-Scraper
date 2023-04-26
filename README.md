@@ -38,13 +38,14 @@ pip install praw
 
 ### ![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)
 1. Clone this repository or download the script to your local machine.
-2. Open the script in a Python IDE or text editor.
-3. Run the script and enter the required inputs in the command prompt when prompted:
+2. Create a Reddit Script app and get your credential and secret.
+3. Open the script in a Python IDE or text editor.
+4.. Run the script and enter the required inputs in the command prompt when prompted:
     - The subreddit name you want to scrape
     - The number of posts you want to scrape
     - The name of the CSV file to be stored
-4. The script will start scraping posts and store them in an CSV file with the specified name.
-5. The CSV file will be automatically opened after the script has finished running.
+5. The script will start scraping posts and store them in an CSV file with the specified name.
+6. The CSV file will be automatically opened after the script has finished running.
 
 ## Functionality and Features
 - The program scrapes a specified number of tweets containing a particular keyword from Twitter and a specified number of posts from a subreddit on Reddit.
