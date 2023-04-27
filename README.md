@@ -83,4 +83,4 @@ Contributions to this project are always welcome! If you would like to contribut
 6. Create a pull request to the main repository
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details. By contributing to this project, you agree that your contributions will be licensed under its MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. By contributing to this project, you agree that your contributions will be licensed under its MIT License.
